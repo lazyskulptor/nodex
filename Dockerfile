@@ -106,7 +106,6 @@ RUN chmod 700 /usr/src/bin/*
 RUN chmod 771 /usr/src/app
 RUN chmod -R 775 /usr/src/app/public
 
-RUN npm install --only=production
 EXPOSE 80
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
